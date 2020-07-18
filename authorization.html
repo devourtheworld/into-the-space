@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mars.css">
+    <title>Authorization | Into the Space</title>
     <link rel="icon" href="img/planet-icon.png">
-    <title>Mars | Into the Space</title>
+    <link rel="stylesheet" href="css/authorization.css">
 </head>
 <body>
     <header>
@@ -33,41 +33,21 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1> MARS </h1>
-            <p> 
-                Mars is the fourth planet from the Sun and the second-smallest planet 
-                in the Solar System, being only larger than Mercury. 
-                In English, Mars carries the name of the Roman god 
-                of war and is often referred to as the "Red Planet". 
-            </p>
-            <img height=500 width=500 src="img/mars.jpg" alt="mars planet">
-            <h2> 110 mil km </h2>
-            <p> From Home </p>
-            <h2> 9 weeks </h2>
-            <p> Time </p>
-            <h2> 5 times </h2>
-            <p> Ration </p>
-            <h2> 760 kg </h2>
-            <p> Lugage </p>
-            <h2> 5 adults </h2>
-            <p> Pasengers </p>
-            <h2 id="category-selection"> SELECT CATEGORY </h2>
+        <section class="authorization-form">
+            <h1> Authorization </h1>
+            <p> if you want, you can authorize, but that is not required </p>
             <form>
-                <label for="cheap"> 
-                    <input id="cheap" name="category" value="cheap" type="radio">
-                    Cheap
+                <input id="email" name="email" type="email" placeholder="Email *" maxlength="50" required>
+                <input id="password" name="password" type="password" placeholder="Password *" required>
+                <label for="remember-me">
+                    <input id="remember-me" name="remember-me" type="checkbox">
+                    Remember me
                 </label>
-                <label for="standart">
-                    <input id="standart" name="category" value="standart" type="radio" checked>
-                    Standart
-                </label>
-                <label for="luxury">
-                    <input id="luxury" name="category" value="luxury" type="radio">
-                    Luxury
-                </label>
-                <button type="submit">  ADD TO CART </button>
-            </form> 
+                <button type="submit"> Login </button>
+            </form>
+            <p> Not registered yet? 
+                <a href="registration.html"> Register </a>
+            </p>
         </section>
     </main>
     <footer>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts | Into the Space</title>
+    <title>Registration | Into the Space</title>
     <link rel="icon" href="img/planet-icon.png">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/registration.css">
 </head>
 <body>
     <header>
@@ -33,46 +33,30 @@
         </nav>
     </header>
     <main>
-        <section class="contacts-main-text">
-            <h1> CONTACT US </h1>
-            <p> If you have some questions or problems tell us </p>
-        </section>
-        <div class="contact-us-form">
+        <section class="registration">
+            <h1> Let's make you an account </h1>
+            <p> if you want </p>
             <form action="#" method="POST">
-                <input id="first-name" name="first-name" type="text" placeholder="First name *" maxlength="50" required>
-                <input id="last-name" name="last-name" type="text" placeholder="Last name *" maxlength="50" required>
-                <input id="email" name="email" type="email" placeholder="Email *" required>
-                <input id="phone-number" type="number" placeholder="Number">
-                <textarea id="message" placeholder="Message *" maxlength="2000" required></textarea>
-                <label for="help-with">
-                    <select id="help-with" name="help-with">
-                        <option value="business"> Business </option>
-                        <option value="order"> Order </option>
-                        <option value="site"> Site </option>
-                        <option value="serve"> Serve </option>
-                        <option value="other"> Other </option>
-                    </select>
-                </label>
+                <input id="email" name="email" type="email" placeholder="Email *" maxlength="70" required>
+                <input id="password" name="password" type="password" placeholder="Password *" required>
+                <input id="confirm-pass" name="confirm-pass" type="password" placeholder="Confirm password *" required>
+                <input id="country" name="country" type="text" placeholder="Country *" maxlength="50" required>
+                <input id="picture-code" type="text" placeholder="Code from picture *" required>
+                <img src="img/captcha.png" alt="captcha">
                 <label for="update-messages">
                     <input id="update-messages" name="update-messages" type="checkbox">
                     I would like to be updated on latest products, event announcements, and thought leadership.
                 </label>
                 <label for="terms">
-                    <input id="terms" name="terms" type="checkbox" value="checked" required>
+                    <input id=terms name=terms type="checkbox" required>
                     I have read and accepted the Terms & Conditions and Privacy Policy.
                 </label>
-                <button id="submit-button" type="submit"> Send </button>
+                <button type="submit"> Create profile </button>
             </form>
-            <p> Our phone numbers: </p>
-            <ol class="phone-numbers">
-                <li>Ukraine: + 123 456 789 0</li>
-                <li>United Kingdom: + 123 456 789 0</li>
-                <li>United States of America: + 321 456 789 0</li>
-            </ol>
-        </div>
+        </section>
     </main>
     <footer>
-        <p> © Copyright 2020 Into the Space </p>
+         <p> © Copyright 2020 Into the Space </p>
     </footer>
 </body>
 </html>
