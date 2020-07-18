@@ -9,32 +9,36 @@
 </head>
 <body>
     <header>
-        <img height=40 width=25 src="img/rocket-white-logo-inclined.png" alt="white rocket logo" >
-        <img height=30 width=65 src="img/into-the-space.png" alt="into the space text logo">
-        <a href="#"> 
-            <p> my </p> 
-            <p> Cart </p>
-        </a>
-        <img height=25 width=25 src="img/chat-icon.png" alt="chat icon">
             <nav>
-                <img height=15 width=25 src="img/burger-menu-icon.png" alt="burger menu">
-                <a href="#"> Log In / Out </a>
-                <a href="#"> Products </a>
-                <a href="#"> About Us </a>
-                <a href="#"> Locations </a>
-                <a href="#"> Contacts </a>
+                <ul>
+                    <li>
+                        <img id="logo" height=40 width=25 src="img/rocket-white-logo-inclined.png" alt="inclined white rocket logo" >
+                        <img id="text-logo" height=30 width=65 src="img/into-the-space.png" alt="into the space text logo">    
+                        <a href="cart.html"> my Cart </a>
+                        <img height=25 width=25 src="img/chat-icon.png" alt="chat icon">
+                        <img height=15 width=25 src="img/burger-menu-icon.png" alt="burger menu">
+                        <a href="log-in-out.html"> Log In/Out </a>
+                        <a href="products.html"> Products </a>
+                        <a href="about-us.html"> About Us </a>
+                        <a href="locations.html"> Locations </a>
+                        <a href="contacts.html"> Contacts </a>
+                    </li>
+                </ul>
             </nav>
     </header>
-        <section>
+    <main>
+        <section id="main-page">
             <h1> HAVE YOU BEEN IN THE SPACE? </h1>
             <p> `Space is for everybody. It’s not just for a few people in science or math, or for a select group of astronauts. That’s our new frontier out there, and it’s everybody’s business to know about space.` </p>
             <p> Christa McAuliffe </p>
         </section>
         <div id="products">
             <p> MARS <p>
-            <img height=500 width=500 src="img/mars.jpg" alt="mars picture">
+            <a href="mars.html">
+                <img height=500 width=500 src="img/mars.jpg" alt="mars picture">
+            </a>
         </div>
-        <section>
+        <section id="reviews">
             <h1> LAST REVIEWS </h1>
             <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars">
             <p> N.Armstrong about Mars </p>
@@ -47,7 +51,7 @@
             <p>  Highly recommend this tour. That was best months in my life. First time that far away from home. </p>
             <button type="submit"> YOUR REVIEW </button>
         </section>
-        <section>
+        <section id="events">
             <h1> EVENTS </h1>
             <p> Conference where we will show our new project. </p>
             <img height=100 width=100 src="img/unknown-planet.png" alt="blured planet with ? symbol in the center">
@@ -56,8 +60,8 @@
             <img height=100 width=130 src="img/space-company-office.jpg" alt="blured planet with ? symbol in the center">
             <p> 10d 17h 53m </p>
         </section>
-        <section>
-            <h1> OUR MAIN TEAM and FRIEND </h1>
+        <section id="team-friends">
+            <h1> OUR MAIN TEAM and FRIENDS </h1>
             <img height=100 width=100 src="img/emily-adams.png" alt="Emily Adams photo">
             <p> Emily Adams </p>
             <p> engeneer </p>
@@ -71,7 +75,7 @@
             <img height=130 width=185 src="img/boeing.png" alt="Boeing logo">
             <img height=80 width=200 src="img/blue-origin.png" alt="Blue Origin logo">
         </section>
-        <section>  
+        <section id="locations-contacts">  
             <h1> WHERE WE ARE? </h1>
             <img height=17 width=13 src="img/location-icon.png" alt="location icon">
             <p> 221b Baker Street, UK, London </p>
@@ -85,6 +89,7 @@
                 <a href="https://www.instagram.com/zbys1av/" target="_blank"> Twitter </a>
                 <a href="https://www.instagram.com/zbys1av/" target="_blank"> YouTube </a>
         </section>
+    </main>
     <footer>
         <p> © Copyright 2020 Into the Space </p>
     </footer>

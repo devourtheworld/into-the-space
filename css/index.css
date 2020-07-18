@@ -6,6 +6,26 @@ h1{
     color:white;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 body{
     background-color: black;
+}
+
+
+header{
+    height: 70px;
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+}
+
+#text-logo img{
+    margin-right: 100px;
+}
+
+ul {
+    padding: 2px 1px 1px 1px;
 }
