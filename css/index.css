@@ -1,27 +1,46 @@
-p{
-    color: white;
-}
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto+Condensed:wght@700&display=swap");
 
-h1{
-    color:white;
-}
-
-a {
-    color: white;
-    text-decoration: none;
+:root{
+    --main-color: black;
+    --accent-color: white;
+    scroll-behavior: smooth;
 }
 
 body{
+    max-width: 1300px;
     background-color: black;
+    margin: auto;
 }
 
-
-header{
-    height: 70px;
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
+h1, h2, p, div {
+    color: var(--accent-color);
+    margin: 0;
+    padding: 0;
 }
 
-ul {
-    padding: 2px 1px 1px 1px;
+#logo-picture{
+    height: 35px;
+    width: 35px;
+}
+
+header nav .menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    flex: 1;
+}
+
+.logo{
+    font-family: "Krona One", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul.menu a:not(.logo){
+    text-transform: uppercase;
+    text-decoration: none;
 }
