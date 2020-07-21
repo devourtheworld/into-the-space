@@ -8,12 +8,12 @@
 }
 
 body{
-    max-width: 1300px;
+    max-width: 1100px;
     background-color: black;
     margin: auto;
 }
 
-header .banner h1, header label .logo{
+header label .logo{
     font-family: 'Krona One', sans-serif;
     text-align: center;
 }
@@ -76,11 +76,11 @@ header nav .menu{
 
 header div label .logo{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 0;
     list-style-type: none;
     flex: 1;
-    align-items: center;
+    align-items: flex-end;
 }
 
 
@@ -88,13 +88,13 @@ header div label .logo{
     font-family: "Krona One", sans-serif;
     text-align: left;
     font-size: 1rem;
-    margin: 0;
+    margin: auto;
     padding: 0;
     text-decoration: none;
     max-width: 150px;
 }
 
-ul.menu a{
+ul.menu a:not(#chat-icon){
     text-transform: uppercase;
     text-decoration: none;
     color: var(--accent-color);
@@ -103,13 +103,13 @@ ul.menu a{
     transition: all 0.7s;
 }
 
-header > nav > ul.menu > li > a:hover:not(#chat) {
+header > nav > ul.menu > li > a:hover:not(#chat-icon) {
     border: 1px solid var(--accent-color);
 }
 
 main nav .sidebar{
     position: fixed;
-    left: 1%;
+    left: 0.3%;
     bottom: 50%;
     margin: 0px;
     padding: 5px;
@@ -128,10 +128,10 @@ main ul.sidebar a{
 .sidebar:hover{
     border: 1px solid var(--main-color);
     position: fixed;
-    left: 1%;
+    left: 0.3%;
     bottom: 50%;
     margin: 0px;
-    padding: 5px;
+    padding: 9px;
     background-color: black;
     }
 
@@ -139,13 +139,13 @@ ul.sidebar a:hover{
     padding-left: 5px;
 }
 
-@media (max-width: 1430px) {
+@media (max-width: 1170px) {
     main nav .sidebar{
         position: fixed;
         left: 1%;
         bottom: 50%;
         margin: 0px;
-        padding: 2px;
+        padding: 5px;
         list-style-type: none;
         border: 1px solid transparent;
         background-color: transparent;
@@ -158,15 +158,16 @@ ul.sidebar a:hover{
     }
 }
 
-@media (min-width: 620px) {                     /* how to make logo in center? */
-    header div.logo{
-        display: flex;
+@media (min-width: 640px) {                    
+    #logo > label {
+        justify-content: center;
         align-content: center;
     }
 
     header nav {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }
 
@@ -174,7 +175,7 @@ ul.sidebar a:hover{
     background-image: url(../img/special-space.png);
     background-position: top;
     background-size: cover;
-    min-height: 700px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -197,7 +198,7 @@ ul.sidebar a:hover{
     display: flex;
     font-size: 1.5rem;
     flex-direction: column;
-    align-content: flex-end;
+    align-content: center;
     text-align: right;
     max-width: 450px;
 }
@@ -213,11 +214,11 @@ body div .products{
 }
 
 #mars-planet{
-    height: 700px;
-    width: 700px;
+    width: 90%;
 }
 
-body #mars-text {
+body #mars-text{
+    font-family: 'Krona One', sans-serif;
     color: transparent;
     text-decoration: none;
     text-transform: uppercase;
