@@ -41,6 +41,12 @@ nav.menu{
 
 .menu #logo-picture{
     border-right: 1px solid var(--accent-color);
+    transition: all 0.5s;
+}
+
+.menu #logo-picture:hover{
+    background-color: rgba(182, 0, 0, 0.432);
+    transition: all 10s;
 }
 
 /* header label .logo{
@@ -100,8 +106,14 @@ h1, h2, p, div{
 .logo{
     text-decoration: none;
     text-align: left;
+    transition: all 0.5s;
     /* max-width: 150px; */
 }
+
+/* .logo:hover{
+    background-color: var(--accent-color);
+    transition: all 0.5s;
+} */
 
 /* ul.menu a{
     text-transform: uppercase;
@@ -163,7 +175,7 @@ button:focus {
   display: grid;
   background-color: var(--main-color);
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -292,6 +304,7 @@ ul.sidebar a:hover{
         border: 1px solid transparent;
         background-color: transparent;
         transition: all 0.7s;
+        visibility: hidden;
     }
 
     main ul.sidebar a{
@@ -313,33 +326,7 @@ ul.sidebar a:hover{
     }
 }
 
-.text{
-    background-image: url(../img/special-space.png);
-    background-position: top;
-    background-size: cover;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-top: 70px;
-    margin-bottom: 100px;
-}
-
-/* CAROUSEL */
-.carousel-inner{
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.carousel div{
-    position: relative;
-    text-align: center;
-}
-/* /CAROUSEL */
-
-#mars-link-text{
+/* #mars-link-text{
     color: var(--accent-color);
     font-size: 25px;
     text-transform: uppercase;
@@ -366,7 +353,78 @@ ul.sidebar a:hover{
     align-content: center;
     text-align: right;
     max-width: 450px;
+} */
+
+
+
+#main-text-main-page{
+    grid-area: sd;
+    font-size: 6rem;
+    max-width: 330px;
+    line-height: 80px;
+    margin: 50px 10px 10px 10px;
+    text-transform: uppercase;
 }
+
+.main-page-paragraph{
+    grid-area: mn;
+    font-size: 1.3rem;
+    line-height: 21px;
+}
+
+#text-author{
+    grid-area: ft;
+}
+
+.main-page{
+    display: grid;
+    background-image: url(../img/special-space.png);
+    background-position: center center;
+    background-size: contain;
+    height: 600px;
+    background-repeat: no-repeat;
+    margin: 70px 1px 70px 1px;
+}
+
+.text{
+    /* min-height: 600px; */
+    display: grid;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    /* flex-direction: row; */
+    /* margin-top: 70px;
+    margin-bottom: 100px; */
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "e2 e1 e1 e1 e1 e1 e1 e1 e1"
+    "e2 sd sd sd e7 e8 e8 e8 e5"
+    "e2 sd sd sd e7 mn mn mn e5"
+    "e2 sd sd sd e4 e4 e4 ft e6"
+    "e2 sd sd sd e3 e3 e3 e3 e3";
+}
+
+/* CAROUSEL */
+.carousel{
+    margin: 75px 1px 75px 1px;
+}
+
+.carousel-inner{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-item{
+    position: unset;
+}
+
+.carousel div{
+    /* position: relative; */
+    text-align: center;
+}
+/* /CAROUSEL */
 
 body div .products{
     display: flex;
@@ -397,9 +455,19 @@ body #mars-text{
     color: var(--accent-color);
 } */
 
+.reviews{
+    margin: 105px 1px 105px 1px;
+}
+
 #last-review{
     text-align: left;
     text-transform: uppercase;
+}
+
+.rating{
+    display: flex;
+    grid-area: sd;
+    margin: 0 5px 0 0;
 }
 
 .review-main-row{
@@ -409,6 +477,11 @@ body #mars-text{
     text-align: left;
     /* padding: 0 20px 0 0; */
     flex-direction: column;
+    grid-area: main;
+}
+
+.review-text{
+    grid-area: ft;
 }
 
 .reviewer-name, .product-name{
@@ -417,4 +490,108 @@ body #mars-text{
 
 .about-word{
     font-size: 14px;
+}
+
+.item{
+    display: grid;
+    margin: 15px 0 15px 0;
+    /* grid-template-columns: 50px 250px; */
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(25px, auto);
+    grid-template-areas: 
+    "sd main main main   main   main   main   main   main"
+    "sd ft ft ft ft ft ft ft ft"
+    "sd ft ft  ft  ft   ft   ft   ft   ft";
+}
+
+#left-review{
+    position: sticky;
+    margin: 25px 1px 25px 3px;
+    border: 1px solid var(--accent-color);
+    left: 70%;
+}
+
+/* .cta-btn{
+    font-family: "Roboto Condensed", sans-serif;;
+    text-transform: uppercase;
+    font-size: 1em;
+} */
+
+.btn-primary {
+    font-family: "Roboto Condensed", sans-serif;;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    font-size: 1em;
+}
+
+.btn {
+    border-radius: 0;
+    transition: all 5s;
+}
+
+.btn:hover {
+    background-color: rgba(182, 0, 0, 0.432);
+    transition: all 5s;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: rgba(182, 0, 0, 0.432);
+    border-color: transparent;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: var(--accent-color);
+    background-color: var(--main-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0);
+}
+
+.btn:active{
+    box-shadow: transparent;
+    background-color: rgba(182, 0, 0, 0.432);
+}
+
+.card {
+    position: relative;
+    /* grid-row: 1; */
+    align-items: space-around;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--accent-color);
+    background-clip: border-box;
+    border: 0px solid transparent;
+    border-radius: 0;
+}
+
+.review-form{
+    display: grid;
+    grid-row: 1;
+    flex-direction: column;
+    text-align: center;
+    /* flex-direction: row;
+    justify-items: left; */
+    justify-content: space-around;
+}
+
+#send-review{
+    text-transform: uppercase;
+    margin: 3px;
+    padding: 3px;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+#send-review:hover{
+    border: 1px solid var(--main-color);
+    transition: 0.5s;
 }

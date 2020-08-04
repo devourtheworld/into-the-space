@@ -122,10 +122,10 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <section id="reviews">
-            <h1 id="last-review">Last review</h1>
+        <section id="reviews" class="reviews">
+            <h1 id="last-review">Last reviews</h1>
             <div class="reviews">
-                <div class="first-item">
+                <div class="item">
                     <!-- <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars"> -->
                     <h1 class="rating">5/5</h1>
                     <div class="review-main-row">
@@ -137,7 +137,7 @@
                     </div>
                     <p class="review-text">That was best months in my life. Highly recommend this tour.</p>
                 </div>
-                <div class="second-item">
+                <div class="item">
                     <!-- <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars"> -->
                     <h1 class="rating">5/5</h1>
                     <div class="review-main-row">
@@ -149,7 +149,7 @@
                     </div>
                     <p class="review-text">That was best months in my life. Highly recommend this tour. First time that far away from home.</p>
                 </div>
-                <div class="third-item">
+                <div class="item">
                     <!-- <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars"> -->
                     <h1 class="rating">4/5</h1>
                     <div class="review-main-row">
@@ -162,16 +162,70 @@
                     <p class="review-text">Highly recommend this tour. That was best months in my life. First time that far away from home.</p>
                 </div>
             </div>
-            <button type="submit"> YOUR REVIEW </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="left-review">Your review</button>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <form class="review-form" action="https://formspree.io/xbjzppro" method="POST">
+                    <div>
+                        <label for="costumer-name">
+                            <input id="costumer-name" name="costumer-name" type="text" placeholder="Your name" maxlength="50">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="name-of-product">
+                            <input id="cname-of-product" name="name-of-product" type="text" placeholder="Product you reviewing" maxlength="25">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="costumer-rating">
+                            <input id="costumer-rating" name="costumer-rating" type="number" placeholder="?/5" min="1" max="5">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="costumer-review">
+                            <textarea id="costumer-review" name="costumer-review" placeholder="Your review" maxlength="100"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <button id="send-review" type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
         </section>
-        <section id="events">
-            <h1> EVENTS </h1>
-            <p> Conference where we will show our new project. </p>
-            <img height=100 width=100 src="img/unknown-planet.png" alt="blured planet with ? symbol in the center">
-            <p> 10d 17h 53m </p>
-            <p> Conference where we will show our new project. </p>
-            <img height=100 width=130 src="img/space-company-office.jpg" alt="blured planet with ? symbol in the center">
-            <p> 10d 17h 53m </p>
+        <section id="events" class="events">
+            <div>
+                <h1> EVENTS </h1>
+                <p> Conference where we will show our new project. </p>
+                <img height=100 width=100 src="img/unknown-planet.png" alt="blured planet with ? symbol in the center">
+            </div>
+            <div>
+                <p> 10d 17h 53m </p>
+                <p> Conference where we will show our new project. </p>
+                <img height=100 width=130 src="img/space-company-office.jpg" alt="blured planet with ? symbol in the center">
+                <!-- <p> 10d 17h 53m </p> -->
+                <!-- <div class="year"></div> -->
+                <div id="year" class="year"></div>
+                <div id="countdown" class="countdown">
+                  <div class="time">
+                    <h2 id="days">00</h2>
+                    <small>days</small>
+                  </div>
+                  <div class="time">
+                    <h2 id="hours">00</h2>
+                    <small>hours</small>
+                  </div>
+                  <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>minutes</small>
+                  </div>
+                  <!-- <div class="time">
+                    <h2 id="seconds">00</h2>
+                    <small>seconds</small>
+                  </div> -->
+                </div>
+
+            </div>
         </section>
         <section id="team-friends">
             <h1> OUR MAIN TEAM and FRIENDS </h1>
