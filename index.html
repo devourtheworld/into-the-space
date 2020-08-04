@@ -10,42 +10,65 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/index.css">
     <title>Into the Space</title>
 </head>
 <body>
     <header>
-        <nav>
-        <!--<div class="logo">
-                </a>
-                        <a class="logo" href="#main-page">
-                            <img id="logo-picture" src="img/planet-icon.png" alt="white logo of planet with ring" >
-                        </a>
-                        <a class="logo" href="#main-page">
-                            <div id="text-logo">into the SPACE</div>
-                        </a> 
-            </div> -->
+        <nav class="menu">
             <div id="logo" class="logo">
-                    <label class="logo">
-                        <a class="logo" href="#">
-                            <img id="logo-picture" src="img/planet-icon.png" alt="white logo of planet with ring">
-                            into the SPACE
-                        </a>
-                    </label>
+                <a class="logo" href="#">
+                    <img id="logo-picture" src="img/logo.png" alt="white logo of planet with ring">
+                </a>
             </div>
-            <ul class="menu">
-                <li> <a href="cart.html">Cart</a> </li>
-                <li id=chat> 
-                    <a href="contacts.html">
-                        <img id="chat-icon" src="img/chat-icon.png" alt="chat icon">
-                    </a>
-                </li>
-                <li> <a href="authorization.html">Profile</a> </li>
+            <div id="empty-space"></div>
+            <div id="cart">
+                <a id="cart-text" href="cart.html">Cart</a>
+            </div> 
+            <div id=chat> 
+                <a href="contacts.html">
+                    <img id="chat-icon" src="img/chat-icon.png" alt="chat icon">
+                </a>
+            </div>
+                <!-- <li> <a href="authorization.html">Profile</a> </li>
                 <li> <a href="products.html">Products</a> </li>
                 <li> <a href="about-us.html">About Us</a> </li>
                 <li> <a href="locations.html">Locations</a> </li>
-                <li> <a href="contacts.html">Contacts</a> </li>
-            </ul>
+                <li> <a href="contacts.html">Contacts</a> </li> -->
+            <div id="hamburger-menu">
+                <button class="cta-btn" id="open">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </button>
+            </div>
+            <div class="modal-container" id="modal">
+                <div class="modal">
+                    <button class="close-btn" id="close">
+                            <i class="fa fa-times"></i>
+                    </button>
+                    <div class="modal-content">
+                        <div>
+                            <a href="products.html">Profile</a>
+                        </div>
+                        <div>
+                            <a href="about-us.html">About Us</a>
+                        </div>
+                        <div>
+                            <a href="locations.html">Locations</a>
+                        </div>
+                        <div>
+                            <a href="contacts.html">Contacts</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -100,22 +123,43 @@
             </a>
         </div>
         <section id="reviews">
-            <h1 id="last-review"> LAST REVIEWS </h1>
+            <h1 id="last-review">Last review</h1>
             <div class="reviews">
                 <div class="first-item">
-                    <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars">
-                    <p> N.Armstrong about Mars </p>
-                    <p> That was best months in my life. Highly recommend this tour. </p>
+                    <!-- <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars"> -->
+                    <h1 class="rating">5/5</h1>
+                    <div class="review-main-row">
+                        <p class="reviewer-name">N.Armstrong</p> 
+                        <p></p>
+                        <p class="about-word">about</p> 
+                        <p></p>
+                        <p class="product-name">Mars</p>
+                    </div>
+                    <p class="review-text">That was best months in my life. Highly recommend this tour.</p>
                 </div>
                 <div class="second-item">
-                    <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars">
-                    <p> Y.Gagarin about Mars </p>
-                    <p> That was best months in my life. Highly recommend this tour. First time that far away from home. </p>
+                    <!-- <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars"> -->
+                    <h1 class="rating">5/5</h1>
+                    <div class="review-main-row">
+                        <p class="reviewer-name">Y.Gagarin</p> 
+                        <p></p>
+                        <p class="about-word">about</p> 
+                        <p></p>
+                        <p class="product-name">Mars</p>
+                    </div>
+                    <p class="review-text">That was best months in my life. Highly recommend this tour. First time that far away from home.</p>
                 </div>
                 <div class="third-item">
-                    <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars">
-                    <p> A.Shepard about Jupiter </p>
-                    <p>  Highly recommend this tour. That was best months in my life. First time that far away from home. </p>    
+                    <!-- <img height=100 width=100 src="img/mars-review.png" alt="mars picture with review stars"> -->
+                    <h1 class="rating">4/5</h1>
+                    <div class="review-main-row">
+                        <p class="reviewer-name">A.Shepard</p> 
+                        <p></p>
+                        <p class="about-word">about</p> 
+                        <p></p>
+                        <p class="product-name">Mars</p>
+                    </div>  
+                    <p class="review-text">Highly recommend this tour. That was best months in my life. First time that far away from home.</p>
                 </div>
             </div>
             <button type="submit"> YOUR REVIEW </button>
