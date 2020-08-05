@@ -11,7 +11,8 @@
 :root{
     font-family: "Roboto Condensed", sans-serif;
     --main-color: black;
-    --accent-color: white;
+    --second-color: white;
+    --third-color: rgba(182, 0, 0, 0.432);
     scroll-behavior: smooth;
 }
 
@@ -36,16 +37,16 @@ nav.menu{
 }
 
 .menu{
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--second-color);
 }
 
 .menu #logo-picture{
-    border-right: 1px solid var(--accent-color);
+    border-right: 1px solid var(--second-color);
     transition: all 0.5s;
 }
 
 .menu #logo-picture:hover{
-    background-color: rgba(182, 0, 0, 0.432);
+    background-color: var(--third-color);
     transition: all 10s;
 }
 
@@ -57,13 +58,13 @@ nav.menu{
 } */
 
 h1, h2, p, div{
-    color: var(--accent-color);
+    color: var(--second-color);
     margin: 0;
     padding: 0;
 }
 
 /* header > nav > div.logo > label > a{
-    color: var(--accent-color);
+    color: var(--second-color);
     text-decoration: none;
     min-width: 150px;
     text-align: left;
@@ -111,21 +112,21 @@ h1, h2, p, div{
 }
 
 /* .logo:hover{
-    background-color: var(--accent-color);
+    background-color: var(--second-color);
     transition: all 0.5s;
 } */
 
 /* ul.menu a{
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--second-color);
     border: 1px solid transparent;
     padding: 5px;
     transition: all 0.7s;
 } */
 
 #cart-text{
-    color: var(--accent-color);
+    color: var(--second-color);
     transition: all 0.5s;
     text-transform: uppercase;
     margin: 3px 4px 0 4px;
@@ -135,7 +136,7 @@ h1, h2, p, div{
 
 #cart-text:hover{
     text-decoration: none;
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--second-color);
     transition: all 0.5s;
 }
 
@@ -158,7 +159,7 @@ button:focus {
 }
 
 .modal-container {
-    background-color: rgba(182, 0, 0, 0.432);
+    background-color: var(--third-color);
     display: none;
     position: fixed;
     top: -1px;
@@ -201,7 +202,7 @@ button:focus {
 }
 
 div.modal-content a{
-    color: var(--accent-color);
+    color: var(--second-color);
     text-decoration: none;
     background-color: var(--main-color);
     transition: 0.5s;
@@ -217,7 +218,7 @@ div.modal-content a:hover{
 div.hamburger{
     width: 15px;
     height: 2px;
-    background-color: var(--accent-color);
+    background-color: var(--second-color);
     margin: 3px 4px 0 4px;
 }
 
@@ -267,13 +268,13 @@ main nav .sidebar{
     margin: 0px;
     padding: 5px;
     list-style-type: none;
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--second-color);
     background-color: black;
     transition: all 0.7s;
 }
 
 main ul.sidebar a{
-    color: var(--accent-color);
+    color: var(--second-color);
     text-decoration: none;
     transition: all 0.4s;
 }
@@ -327,7 +328,7 @@ ul.sidebar a:hover{
 }
 
 /* #mars-link-text{
-    color: var(--accent-color);
+    color: var(--second-color);
     font-size: 25px;
     text-transform: uppercase;
     text-decoration: none;
@@ -452,7 +453,7 @@ body #mars-text{
 } */
 
 /* body #mars-text:hover{
-    color: var(--accent-color);
+    color: var(--second-color);
 } */
 
 .reviews{
@@ -507,7 +508,7 @@ body #mars-text{
 #left-review{
     position: sticky;
     margin: 25px 1px 25px 3px;
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--second-color);
     left: 70%;
 }
 
@@ -521,8 +522,8 @@ body #mars-text{
     font-family: "Roboto Condensed", sans-serif;;
     text-transform: uppercase;
     background-color: var(--main-color);
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    border-color: var(--second-color);
+    color: var(--second-color);
     font-size: 1em;
 }
 
@@ -532,20 +533,20 @@ body #mars-text{
 }
 
 .btn:hover {
-    background-color: rgba(182, 0, 0, 0.432);
+    background-color: var(--third-color);
     transition: all 5s;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: rgba(182, 0, 0, 0.432);
+    background-color: var(--third-color);
     border-color: transparent;
 }
 
 .btn-primary.focus, .btn-primary:focus {
-    color: var(--accent-color);
+    color: var(--second-color);
     background-color: var(--main-color);
-    border-color: var(--accent-color);
+    border-color: var(--second-color);
     box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0);
     outline: none;
 }
@@ -556,7 +557,7 @@ body #mars-text{
 
 .btn:active{
     box-shadow: transparent;
-    background-color: rgba(182, 0, 0, 0.432);
+    background-color: var(--third-color);
 }
 
 .card {
@@ -565,7 +566,7 @@ body #mars-text{
     align-items: space-around;
     min-width: 0;
     word-wrap: break-word;
-    background-color: var(--accent-color);
+    background-color: var(--second-color);
     background-clip: border-box;
     border: 0px solid transparent;
     border-radius: 0;
@@ -585,7 +586,7 @@ body #mars-text{
     text-transform: uppercase;
     margin: 3px;
     padding: 3px;
-    background-color: var(--accent-color);
+    background-color: var(--second-color);
     color: var(--main-color);
     border: 1px solid transparent;
     transition: 0.5s;
@@ -594,4 +595,219 @@ body #mars-text{
 #send-review:hover{
     border: 1px solid var(--main-color);
     transition: 0.5s;
+}
+
+#event-section-title{
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: row;
+    grid-area: tm;
+}
+
+.time{
+    margin: 5px;
+    padding: 5px;
+}
+
+#first-event-text{
+    grid-area: ft;
+    margin: 5px;
+    padding: 5px;
+}
+
+#first-event-pic{
+    height: 150px; 
+    width: 150px;
+    margin: 10px;
+    grid-area: fp;
+    align-self: center;
+    border-radius: 50%;
+    border: 3px solid var(--second-color);
+}
+
+.first-event{
+    border: 1px solid var(--second-color);
+    display: grid;
+    margin: 15px 0 15px 0;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    grid-template-areas: 
+    "ft ft ft ft ft ft e6 fp fp"
+    "ft ft ft ft ft ft e6 fp fp"
+    "tm tm tm e4 e4 e4 e4 fp fp";
+    transition: 3s;
+}
+
+.first-event:hover{
+    border: 1px solid var(--third-color);
+    background-color: rgba(182, 0, 0, 0.103);
+    transition: 3s;
+}
+
+#second-event-text{
+    grid-area: st;
+    margin: 5px;
+    padding: 5px;
+}
+
+#second-event-pic{
+    height: 150px; 
+    width: 150px;
+    margin: 10px;
+    grid-area: sp;
+    align-self: center;
+    border: 3px solid var(--second-color);
+    border-radius: 50%;
+}
+
+.second-event{
+    border: 1px solid var(--second-color);
+    display: grid;
+    margin: 15px 0 15px 0;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    grid-template-areas: 
+    "st st st st st st e6 sp sp"
+    "st st st st st st e6 sp sp"
+    "e4 e4 e4 e4 e4 e4 e4 sp sp";
+    transition: 3s;
+}
+
+.second-event:hover{
+    border: 1px solid var(--third-color);
+    background-color: rgba(182, 0, 0, 0.103);
+    transition: 3s;
+}
+
+#team-friends-title{
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#team-friends{
+    margin: 125px 0 125px 0;
+}
+
+.team{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0 0 0 ;
+}
+
+#ea-picture, #jf-picture, #ar-picture{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    border: 3px solid var(--second-color)
+}
+
+.emily-adams, .john-floyd, .adam-rivera{
+    text-align: center;
+}
+
+#ea-name, #jf-name, #ar-name{
+    text-transform: uppercase;
+    margin: 2px 0 0 0;
+    padding: 0px;
+}
+
+#ea-profecion, #jf-profecion, #ar-profecion{
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.friends{
+    display: flex;
+    margin: 85px 0 55px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#space-x{
+    height: 30px;
+    width: 200px;
+}
+
+#boeing{
+    height: 130px;
+    width: 185px;
+}
+
+#b-origin{
+    height: 80px;
+    width: 200px;
+}
+
+#locations-contacts{
+    margin: 125px 0 50px 0;
+}
+
+#locations-title{
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#loc-icon{
+    height: 17px;
+    width: 13px;
+}
+
+#ph-icon{
+    height: 15px;
+    width: 15px;
+}
+
+#ml-icon{
+    height: 13px;
+    width: 17px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0 3px 0;
+}
+
+.contacts div{
+    margin: 5px;
+}
+
+#map{
+    height: 450px;
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--second-color);
+    border: 1px solid var(--main-color);
+    text-align: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin: 1px 3px 1px 3px;
+    padding: 1px 3px 1px 3px;
+    transition: 0.6s;
+}
+
+.links a:hover{
+    color: rgb(182, 0, 0);
+    transition: 0.6s;
+}
+
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: -25px 0 0 0;
 }
