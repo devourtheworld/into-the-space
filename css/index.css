@@ -295,39 +295,6 @@ ul.sidebar a:hover{
 }
 /* /SIDEBAR */
 
-@media (max-width: 1170px) {
-    main nav .sidebar{
-        position: fixed;
-        left: 1%;
-        bottom: 50%;
-        margin: 0px;
-        padding: 5px;
-        list-style-type: none;
-        border: 1px solid transparent;
-        background-color: transparent;
-        transition: all 0.7s;
-        visibility: hidden;
-    }
-
-    main ul.sidebar a{
-        color: transparent;
-        text-decoration: none;
-    }
-}
-
-@media (min-width: 641px) {                    
-    #logo > label {
-        justify-content: center;
-        align-content: center;
-    }
-
-    header nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
 /* #mars-link-text{
     color: var(--second-color);
     font-size: 25px;
@@ -361,21 +328,24 @@ ul.sidebar a:hover{
 
 #main-text-main-page{
     grid-area: sd;
-    font-size: 6rem;
+    font-size: 95px;
     max-width: 330px;
     line-height: 80px;
     margin: 50px 10px 10px 10px;
     text-transform: uppercase;
+    transition: all 0.5s;
 }
 
 .main-page-paragraph{
     grid-area: mn;
-    font-size: 1.3rem;
+    font-size: 18px;
     line-height: 21px;
+    transition: 0.5s;
 }
 
 #text-author{
     grid-area: ft;
+    font-size: 14px;
 }
 
 .main-page{
@@ -419,12 +389,41 @@ ul.sidebar a:hover{
 }
 
 .carousel-item{
-    position: unset;
+    position: relative;
 }
 
 .carousel div{
     /* position: relative; */
     text-align: center;
+}
+
+.carousel-inner a{
+    text-decoration: none;
+}
+
+.carousel-title{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    z-index: 998;
+    padding: 1px;
+    margin: 1px;
+    top: 60%;
+    left: 55%;
+    text-decoration: none;
+    color: transparent;
+    border: 1px solid var(--second-color);
+    background-color: rgba(255, 255, 255, 0.205);;
+    transition: 0.5s;
+}
+
+.carousel-title:hover{
+    color: var(--main-color);
+    /* background-color: rgba(255, 255, 255, 0.205); */
+    border: 1px solid var(--main-color);
+    transition: 0.5s;
 }
 /* /CAROUSEL */
 
@@ -832,4 +831,109 @@ footer{
     text-transform: uppercase;
     font-size: 13px;
     margin: -25px 0 0 0;
+}
+
+
+@media (max-width: 1170px) {
+    main nav .sidebar{
+        position: fixed;
+        left: 1%;
+        bottom: 50%;
+        margin: 0px;
+        padding: 5px;
+        list-style-type: none;
+        border: 1px solid transparent;
+        background-color: transparent;
+        transition: all 0.7s;
+        visibility: hidden;
+    }
+
+    main ul.sidebar a{
+        color: transparent;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 1045px) {
+    #main-text-main-page{
+        font-size: 85px;
+        line-height: 70px;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 915px) {
+    #main-text-main-page{
+        font-size: 70px;
+        line-height: 60px;
+        transition: 0.5s;
+    }
+
+    #text-author{
+        grid-area: ft;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 681px) {                    
+    /* #logo > label {
+        justify-content: center;
+        align-content: center;
+    } */
+
+    .main-page-paragraph{
+        font-size: 14px;
+        line-height: 21px;
+        transition: 0.5s;
+    }
+
+    #text-author{
+        grid-area: ft;
+        font-size: 14px;
+    }
+
+    /* header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+}
+
+@media (max-width: 500px){
+    #main-text-main-page{
+        font-size: 50px;
+        line-height: 40px;
+        transition: 0.5s;
+    }
+
+    .main-page-paragraph{
+        font-size: 14px;
+        line-height: 14px;
+        transition: 0.5s;
+    }
+
+    #text-author{
+        grid-area: ft;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 400px) {    
+
+    #main-text-main-page{
+        font-size: 47px;
+        line-height: 40px;
+        transition: 0.5s;
+    }
+
+    .main-page-paragraph{
+        font-size: 11px;
+        line-height: 14px;
+        transition: 0.5s;
+    }
+
+    #text-author{
+        grid-area: ft;
+        font-size: 9px;
+    }
 }
