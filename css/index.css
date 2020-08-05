@@ -140,8 +140,9 @@ h1, h2, p, div{
     transition: all 0.5s;
 }
 
-button,
-input[type='submit'] {
+/* ,
+input[type='submit']  */
+header button{
   background-color: var(--main-color);
   border: 1px solid transparent;
   color: rgb(255, 255, 255);
@@ -489,6 +490,18 @@ body #mars-text{
     text-transform: uppercase;
 }
 
+/* .review-form textarea{
+    height: 90px;
+    width: 200px;
+    margin: 0 0 -2px 3px;
+    padding: 0;
+} */
+
+#customer-review{
+    width: 450px;
+    font-size: 14px;
+}
+
 .about-word{
     font-size: 14px;
 }
@@ -563,7 +576,7 @@ body #mars-text{
 .card {
     position: relative;
     /* grid-row: 1; */
-    align-items: space-around;
+    align-items: space-between;
     min-width: 0;
     word-wrap: break-word;
     background-color: var(--second-color);
@@ -573,10 +586,13 @@ body #mars-text{
 }
 
 .review-form{
-    display: grid;
+    display: flex;
     grid-row: 1;
-    flex-direction: column;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    word-wrap: break-word;
+    /* text-align: center; */
     /* flex-direction: row;
     justify-items: left; */
     justify-content: space-around;
@@ -584,8 +600,9 @@ body #mars-text{
 
 #send-review{
     text-transform: uppercase;
-    margin: 3px;
-    padding: 3px;
+    font-size: 14px;
+    margin: -1px 0 0 0;
+    padding: 1px;
     background-color: var(--second-color);
     color: var(--main-color);
     border: 1px solid transparent;
@@ -593,7 +610,7 @@ body #mars-text{
 }
 
 #send-review:hover{
-    border: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
     transition: 0.5s;
 }
 
