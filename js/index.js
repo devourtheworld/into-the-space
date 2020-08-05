@@ -55,7 +55,16 @@ function closeNavbar(e) {
   }
 
 // Show modal
-open.addEventListener('click', () => modal.classList.add('show-modal'));
+function openModal(){
+  modal.classList.add('show-modal');
+  document.body.style.overflow = "hidden";
+}
+open.addEventListener('click', openModal);
+// => modal.classList.add('show-modal'));
 
 // Hide modal
-close.addEventListener('click', () => modal.classList.remove('show-modal'));
+function hideModal(){
+  modal.classList.remove('show-modal');
+  document.body.style.overflow = "auto"
+}
+close.addEventListener('click', hideModal);

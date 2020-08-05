@@ -614,6 +614,11 @@ body #mars-text{
     transition: 0.5s;
 }
 
+.modal-container{
+    position: absolute;
+    z-index: 999;
+}
+
 #event-section-title{
     text-align: left;
     text-transform: uppercase;
