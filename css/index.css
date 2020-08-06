@@ -25,7 +25,7 @@ body{
 
 /* NAVBAR */
 nav.menu{
-    margin: 5px 0 0 0;
+    margin: 5px 1px 1px 1px;
     display: grid;
     grid-template-columns: 35% 25% 13% 13% 13%;
     /* grid-auto-rows: auto; */
@@ -495,11 +495,10 @@ body #mars-text{
     margin: 0 0 -2px 3px;
     padding: 0;
 } */
+/* 
+.colapse{
 
-#customer-review{
-    width: 450px;
-    font-size: 14px;
-}
+} */
 
 .about-word{
     font-size: 14px;
@@ -573,34 +572,62 @@ body #mars-text{
 }
 
 .card {
-    position: relative;
-    /* grid-row: 1; */
-    align-items: space-between;
-    min-width: 0;
+    /* position: relative; */
+    /* align-items: space-between; */
+    /* min-width: 0; */
     word-wrap: break-word;
     background-color: var(--second-color);
-    background-clip: border-box;
+    /* background-clip: border-box; */
     border: 0px solid transparent;
+    width: 100%;
     border-radius: 0;
 }
 
+#customer-review{
+    width: 450px;
+    height: 30px;
+    font-size: 14px;
+    /* grid-area: cr; */
+    transition: 0.2s;
+}
+
+/* #customer-name{
+    grid-area: cn;
+}
+
+#name-of-product{
+    grid-area: pn;
+}
+
+#customer-rating{
+    grid-area: rt;
+}
+
+#send-review{
+    grid-area: sr;
+} */
+
 .review-form{
     display: flex;
-    grid-row: 1;
+    /* grid-row: 1; */
     margin: 0;
     padding: 0;
-    align-items: center;
+    /* align-items: center; */
     word-wrap: break-word;
     /* text-align: center; */
-    /* flex-direction: row;
-    justify-items: left; */
+    flex-direction: row;
+    justify-items: left;
     justify-content: space-around;
+    transition: 0.2s;
+}
+
+.review-form div{
+    margin: 0 3px 0 0;
 }
 
 #send-review{
     text-transform: uppercase;
     font-size: 14px;
-    margin: -1px 0 0 0;
     padding: 1px;
     background-color: var(--second-color);
     color: var(--main-color);
@@ -627,6 +654,7 @@ body #mars-text{
     display: flex;
     flex-direction: row;
     grid-area: tm;
+    transition: 0.5s;
 }
 
 .time{
@@ -636,8 +664,10 @@ body #mars-text{
 
 #first-event-text{
     grid-area: ft;
+    font-size: 16px;
     margin: 5px;
     padding: 5px;
+    transition: 0.5s;
 }
 
 #first-event-pic{
@@ -648,6 +678,7 @@ body #mars-text{
     align-self: center;
     border-radius: 50%;
     border: 3px solid var(--second-color);
+    transition: 0.5s;
 }
 
 .first-event{
@@ -673,6 +704,7 @@ body #mars-text{
     grid-area: st;
     margin: 5px;
     padding: 5px;
+    transition: 0.5s;
 }
 
 #second-event-pic{
@@ -683,6 +715,7 @@ body #mars-text{
     align-self: center;
     border: 3px solid var(--second-color);
     border-radius: 50%;
+    transition: 0.5s;
 }
 
 .second-event{
@@ -723,7 +756,8 @@ body #mars-text{
     height: 125px;
     width: 125px;
     border-radius: 50%;
-    border: 3px solid var(--second-color)
+    border: 3px solid var(--second-color);
+    transition: 0.5s;
 }
 
 .emily-adams, .john-floyd, .adam-rivera{
@@ -734,12 +768,14 @@ body #mars-text{
     text-transform: uppercase;
     margin: 2px 0 0 0;
     padding: 0px;
+    transition: 0.5s;
 }
 
 #ea-profecion, #jf-profecion, #ar-profecion{
     font-size: 13px;
     margin: 0px;
     padding: 0px;
+    transition: 0.5s;
 }
 
 .friends{
@@ -752,20 +788,24 @@ body #mars-text{
 #space-x{
     height: 30px;
     width: 200px;
+    transition: 0.5s;
 }
 
 #boeing{
     height: 130px;
     width: 185px;
+    transition: 0.5s;
 }
 
 #b-origin{
     height: 80px;
     width: 200px;
+    transition: 0.5s;
 }
 
 #locations-contacts{
     margin: 125px 0 50px 0;
+    transition: 0.5s;
 }
 
 #locations-title{
@@ -860,6 +900,50 @@ footer{
         line-height: 70px;
         transition: 0.5s;
     }
+
+    #first-event-text, #second-event-text{
+        font-size: 14px;
+        transition: 0.5s;
+    }
+
+    #first-event-pic, #second-event-pic{
+        height: 130px; 
+        width: 130px;
+        transition: 0.5s;
+    }
+    
+    #ar-picture, #ea-picture, #jf-picture{
+        height: 115px;
+        width: 115px;
+        transition: 0.5s;
+    }
+
+    #ea-name, #jf-name, #ar-name{
+        font-size: 16px;
+        transition: 0.5s;
+    }
+    
+    #ea-profecion, #jf-profecion, #ar-profecion{
+        font-size: 13px;
+        transition: 0.5s;
+    }
+
+    #b-origin{
+        height: 80px;
+        width: 200px;
+    }
+
+    #space-x{
+        height: 30px;
+        width: 200px;
+        transition: 0.5s;
+    }
+    
+    #boeing{
+        height: 130px;
+        width: 185px;
+        transition: 0.5s;
+    }
 }
 
 @media (max-width: 915px) {
@@ -872,6 +956,79 @@ footer{
     #text-author{
         grid-area: ft;
         font-size: 14px;
+    }
+
+    #first-event-text, #second-event-text{
+        font-size: 13px;
+        transition: 0.5s;
+    }
+
+    #first-event-pic, #second-event-pic{
+        height: 120px; 
+        width: 120px;
+        transition: 0.5s;
+    }
+
+    #ar-picture, #ea-picture, #jf-picture{
+        height: 110px;
+        width: 110px;
+        transition: 0.5s;
+    }
+
+    #ea-name, #jf-name, #ar-name{
+        font-size: 15px;
+        transition: 0.5s;
+    }
+    
+    #ea-profecion, #jf-profecion, #ar-profecion{
+        font-size: 12px;
+        transition: 0.5s;
+    }
+
+    #b-origin{
+        height: 70px;
+        width: 180px;
+    }
+
+    #space-x{
+        height: 25px;
+        width: 185px;
+        transition: 0.5s;
+    }
+    
+    #boeing{
+        height: 115px;
+        width: 155px;
+        transition: 0.5s;
+    }
+
+    #customer-rating{
+        width: 169px;
+        height: 30px;
+        transition: 0.2s;
+    }
+
+    #customer-review{
+        width: 169px;
+        height: 80px;
+        font-size: 14px;
+        /* grid-area: cr; */
+        transition: 0.2s;
+    }
+
+    .review-form{
+        display: flex;
+        /* grid-row: 1; */
+        margin: 0;
+        padding: 0;
+        /* align-items: center; */
+        word-wrap: break-word;
+        /* text-align: center; */
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        justify-content: space-around;
+        transition: 0.2s;
     }
 }
 
@@ -897,6 +1054,55 @@ footer{
         align-items: center;
         justify-content: center;
     } */
+
+    #first-event-text, #second-event-text{
+        font-size: 12px;
+        transition: 0.5s;
+    }
+
+    #first-event-pic, #second-event-pic{
+        height: 100px; 
+        width: 100px;
+        transition: 0.5s;
+    }
+
+    #ar-picture, #ea-picture, #jf-picture{
+        height: 95px;
+        width: 95px;
+        transition: 0.5s;
+    }
+
+    #ea-name, #jf-name, #ar-name{
+        font-size: 14px;
+        transition: 0.5s;
+    }
+    
+    #ea-profecion, #jf-profecion, #ar-profecion{
+        font-size: 11px;
+        transition: 0.5s;
+    }
+
+    #b-origin{
+        height: 55px;
+        width: 160px;
+    }
+
+    #space-x{
+        height: 15px;
+        width: 155px;
+        transition: 0.5s;
+    }
+    
+    #boeing{
+        height: 100px;
+        width: 135px;
+        transition: 0.5s;
+    }
+
+    .location label, .mail label, .phone-num label{
+        font-size: 13px;
+        transition: 0.5s;
+    }
 }
 
 @media (max-width: 500px){
@@ -916,6 +1122,99 @@ footer{
         grid-area: ft;
         font-size: 9px;
     }
+
+    #first-event-text, #second-event-text{
+        font-size: 11px;
+        transition: 0.5s;
+    }
+
+    #first-event-pic, #second-event-pic{
+        height: 90px; 
+        width: 90px;
+        transition: 0.5s;
+    }
+
+    #ar-picture, #ea-picture, #jf-picture{
+        height: 85px;
+        width: 85px;
+        transition: 0.5s;
+    }
+
+    #ea-name, #jf-name, #ar-name{
+        font-size: 13px;
+        transition: 0.5s;
+    }
+    
+    #ea-profecion, #jf-profecion, #ar-profecion{
+        font-size: 10px;
+        transition: 0.5s;
+    }
+
+    .friends{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .friends a{
+        margin: 10px 0 20px 0;
+        padding: 3px;
+        border: 1px solid transparent;
+        transition: 0.5s;
+    }
+
+    .friends a:hover{
+        border-top: 1px solid var(--second-color);
+        border-bottom: 1px solid var(--second-color);
+        transition: 0.5s;
+    }
+
+    /* .location label, .mail label, .phone-num label{
+        font-size: 11px;
+        transition: 0.5s;
+    } */
+    .contacts{
+        grid-area: ct;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        transition: 0.5s;
+    }
+
+    #map{
+        grid-area: mp;
+        transition: 0.5s;
+    }
+
+    .links{
+        grid-area: li;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        text-align: end;
+        background-color: transparent;
+        justify-content: space-around;
+        transition: 0.5s;
+    }
+
+    .links a{
+        color: var(--main-color);
+        margin: 1px 0 2px 0;
+        transition: 0.5s;
+        background-color: var(--second-color);
+    }
+
+    .contact-info{
+        display: grid;
+        margin: 15px 0 15px 0;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-rows: minmax(30px, auto);
+        grid-template-areas: 
+        "ct ct ct ct e2 e2 li li li"
+        "mp mp mp mp mp mp mp mp mp"
+        "e1 e1 e1 e1 e1 e1 e1 e1 e1";
+    }
 }
 
 @media (max-width: 400px) {    
@@ -934,6 +1233,53 @@ footer{
 
     #text-author{
         grid-area: ft;
+        font-size: 9px;
+    }
+
+    #first-event-text, #second-event-text{
+        font-size: 10px;
+        transition: 0.5s;
+    }
+
+    #first-event-pic, #second-event-pic{
+        height: 70px; 
+        width: 70px;
+        transition: 0.5s;
+    }
+
+    #days{
+        font-size: 24px;
+        transition: 0.5s;
+    }
+
+    #hours{
+        font-size: 24px;
+        transition: 0.5s;
+    }
+
+    #minutes{
+        font-size: 24px;
+        transition: 0.5s;
+    }
+
+    #ar-picture, #ea-picture, #jf-picture{
+        height: 70px;
+        width: 70px;
+        transition: 0.5s;
+    }
+
+        
+    #ea-name, #jf-name, #ar-name{
+        font-size: 12px;
+        transition: 0.5s;
+    }
+    
+    #ea-profecion, #jf-profecion, #ar-profecion{
+        font-size: 9px;
+        transition: 0.5s;
+    }
+
+    footer{
         font-size: 9px;
     }
 }
