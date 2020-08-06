@@ -288,6 +288,12 @@ div.hamburger{
     transition: 0.3s;
 }
 
+#contact-us{
+    margin: 10px 0 3px 0;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
 #contact-us-form div{
     margin: 10px;
 }
