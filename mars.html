@@ -3,75 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mars.css">
     <link rel="icon" href="img/planet-icon.png">
     <title>Mars | Into the Space</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/mars.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <img id="logo" height=35 width=35 src="img/planet-icon.png" alt="white logo of planet with ring">
-                        <img id="text-logo" height=30 width=65 src="img/into-the-space.png" alt="into the space text logo">
-                    </a>
-                    <a href="cart.html"> my Cart </a>
-                    <a href="contacts">
-                        <img height=25 width=25 src="img/chat-icon.png" alt="chat icon">
-                    </a>
-                    <a href="#">
-                        <img height=15 width=25 src="img/burger-menu-icon.png" alt="burger menu">
-                    </a>
-                    <a href="authorization.html"> Profile </a>
-                    <a href="products.html"> Products </a>
-                    <a href="about-us.html"> About Us </a>
-                    <a href="locations.html"> Locations </a>
-                    <a href="contacts.html"> Contacts </a>
-                </li>
-            </ul>
+        <nav class="menu">
+            <div id="logo" class="logo">
+                <a class="logo" href="index.html">
+                    <img id="logo-picture" src="img/logo.png" alt="white logo of planet with ring">
+                </a>
+            </div>
+            <div id="empty-space"></div>
+            <div id="cart">
+                <a id="cart-text" href="cart.html">Cart</a>
+            </div> 
+            <div id=chat> 
+                <a href="contacts.html">
+                    <img id="chat-icon" src="img/chat-icon.png" alt="chat icon">
+                </a>
+            </div>
+            <div id="hamburger-menu">
+                <button class="cta-btn" id="open">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </button>
+            </div>
+            <div class="modal-container" id="modal">
+                <div class="modal">
+                    <button class="close-btn" id="close">
+                            <i class="fa fa-times"></i>
+                    </button>
+                    <div class="modal-content">
+                        <div>
+                            <a href="products.html">Our products</a>
+                        </div>
+                        <div>
+                            <a href="about-us.html">About Us</a>
+                        </div>
+                        <div>
+                            <a href="locations.html">Locations</a>
+                        </div>
+                        <div>
+                            <a href="contacts.html">Contacts</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1> MARS </h1>
-            <p> 
-                Mars is the fourth planet from the Sun and the second-smallest planet 
-                in the Solar System, being only larger than Mercury. 
-                In English, Mars carries the name of the Roman god 
-                of war and is often referred to as the "Red Planet". 
-            </p>
-            <img height=500 width=500 src="img/mars.jpg" alt="mars planet">
-            <h2> 110 mil km </h2>
-            <p> From Home </p>
-            <h2> 9 weeks </h2>
-            <p> Time </p>
-            <h2> 5 times </h2>
-            <p> Ration </p>
-            <h2> 760 kg </h2>
-            <p> Lugage </p>
-            <h2> 5 adults </h2>
-            <p> Pasengers </p>
-            <h2 id="category-selection"> SELECT CATEGORY </h2>
-            <form>
-                <label for="cheap"> 
-                    <input id="cheap" name="category" value="cheap" type="radio">
-                    Cheap
-                </label>
-                <label for="standart">
-                    <input id="standart" name="category" value="standart" type="radio" checked>
-                    Standart
-                </label>
-                <label for="luxury">
-                    <input id="luxury" name="category" value="luxury" type="radio">
-                    Luxury
-                </label>
-                <button type="submit">  ADD TO CART </button>
-            </form> 
+        <section class="product">
+            <div class="mars-info">
+                <h1 id="mars-title">Mars</h1>
+                <p id="mars-text"> 
+                    Mars is the fourth planet from the Sun and the second-smallest planet 
+                    in the Solar System, being only larger than Mercury. 
+                    In English, Mars carries the name of the Roman god 
+                    of war and is often referred to as the "Red Planet". 
+                </p>
+            </div>
+        </section>
+            <!-- <div class="mars-picture">
+                <img height=500 width=500 src="img/mars.jpg" alt="mars planet">
+            </div> -->
+            <div class="specification-info">
+                <div class="distance">
+                    <div class="km">
+                        <h2 id="km">110</h2>
+                        <p>mil km</p>
+                    </div>
+                    <p>From Home</p>
+                </div>
+                <div class="time">
+                    <div class="weeks">
+                        <h2 id="weeks">14</h2>
+                        <p>weeks</p>
+                    </div>
+                    <p>Time</p>
+                </div>
+                <div class="ration">
+                    <div class="times">
+                        <h2 id="times">>6</h2>
+                        <p>times</p>
+                    </div>
+                    <p>Ration</p>
+                </div>
+                <div class="lugage">
+                    <div class="kg">
+                        <h2 id="kg">1500</h2>
+                        <p>kg</p>
+                    </div>
+                    <p>Lugage</p>
+                </div>
+                <div class="passengers">
+                    <div class="dollars">
+                        <h2 id="dollars">15000</h2>
+                        <p>dollars</p>
+                    </div>
+                    <p>Price</p>
+                </div>
+            </div>
+            <div class="categories">
+                <h2 id="category-selection">Select category</h2>
+                <form class="test">
+                    <label for="cheap">
+                        <input id="cheap" name="category" value="cheap" type="radio">
+                        Cheap
+                    </label>
+                    <label for="standart">
+                        <input id="standart" name="category" value="standart" type="radio">
+                        Standart
+                    </label>
+                    <label for="luxury">
+                        <input id="luxury" name="category" value="luxury" type="radio">
+                        Luxury
+                    </label>
+                    <button id="add-to-cart" type="submit">Add to cart</button>
+                </form> 
+            </div>
         </section>
     </main>
     <footer>
         <p> © Copyright 2020 Into the Space </p>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/mars.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

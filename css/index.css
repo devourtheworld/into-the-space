@@ -415,7 +415,7 @@ ul.sidebar a:hover{
     text-decoration: none;
     color: transparent;
     border: 1px solid var(--second-color);
-    background-color: rgba(255, 255, 255, 0.205);;
+    background-color: rgba(255, 255, 255, 0.205);
     transition: 0.5s;
 }
 
