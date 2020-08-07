@@ -30,4 +30,4 @@ function changeValues(){
     }
 }
 
-document.querySelector('.test').addEventListener('click', changeValues);
+document.querySelector('.radio-button').addEventListener('click', changeValues);

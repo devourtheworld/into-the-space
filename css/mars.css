@@ -337,9 +337,28 @@ footer{
     transition: 0.3s;
 }
 
+form{
+    display: grid;
+    margin: 15px 0 15px 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    grid-template-areas: 
+    "la la la e1 e1"
+    "la la la e2 bt";
+}
+
+form button{
+    grid-area: bt;
+}
+
+label{
+    font-size: 25px;
+    grid-area: la;
+}
+
 @media (max-width: 500px){
     #mars-title{
-        font-size: 25px;
+        font-size: 55px;
     }
 
     #mars-text{
