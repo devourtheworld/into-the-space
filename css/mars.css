@@ -163,6 +163,7 @@ button:focus {
     background-color: var(--third-color);
     display: none;
     position: fixed;
+    z-index: 999;
     top: -1px;
     left: 0;
     right: 0;
