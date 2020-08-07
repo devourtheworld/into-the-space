@@ -59,6 +59,28 @@ h1, h2, p, div{
     padding: 0;
 }
 
+h4{
+    text-decoration: none;
+    color: var(--second-color);
+    text-transform: uppercase;
+}
+
+.d-flex a{
+    border: 1px solid transparent;
+    padding: 1px 3px 1px 3px;
+    text-decoration: none;
+    color: var(--second-color);
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.d-flex a:hover{
+    border-top: 1px solid var(--second-color);
+    border-bottom: 1px solid var(--second-color);
+    background-color: rgba(182, 0, 0, 0.432);
+    transition: 0.3s;
+}
+
 /* header > nav > div.logo > label > a{
     color: var(--second-color);
     text-decoration: none;
@@ -249,6 +271,25 @@ div article{
     border: 1px solid var(--second-color);
     transition: all 0.4s;
     margin: 3px;
+    height: 100%;
+}
+
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.alert {
+    position: fixed;
+    top: 50px; 
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
+
+.btn {
+    padding: 0.75rem 0.7rem;
 }
 
 .card a{

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "title": "mars",
+        "image": "mars.png",
+        "description": "text-text-text-text-text-text-text-text-text-text-text-text",
+        "price": 499.99
+    },
+    {
+        "id": "2",
+        "title": "mars",
+        "image": "mars.png",
+        "description": "text-text-text-text-text-text-text-text-text-text-text-text",
+        "price": 199.99
+    },
+    {
+        "id": "3",
+        "title": "mars",
+        "image": "mars.png",
+        "description": "text-text-text-text-text-text-text-text-text-text-text-text",
+        "price": 249.99
+    },
+    {
+        "id": "4",
+        "title": "mars",
+        "image": "mars.png",
+        "description": "text-text-text-text-text-text-text-text-text-text-text-text",
+        "price": 199.99
+    },
+    {
+        "id": "5",
+        "title": "mars",
+        "image": "mars.png",
+        "description": "text-text-text-text-text-text-text-text-text-text-text-text",
+        "price": 199.99
+    },
+    {
+        "id": "6",
+        "title": "mars",
+        "image": "mars.png",
+        "description": "text-text-text-text-text-text-text-text-text-text-text-text",
+        "price": 199.99
+    },
+    {
+        "id": "7",
+        "title": "mars",
+        "image": "mars.png",
+        "description": "text-text-text-text-text-text-text-text-text-text-text-text",
+        "price": 199.99
+    },
+    {
+        "id": "8",
+        "title": "mars",
+        "image": "mars.png",
+        "description": "text-text-text-text-text-text-text-text-text-text-text-text",
+        "price": 199.99
+    }
+]
