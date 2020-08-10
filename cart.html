@@ -20,55 +20,69 @@
     <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
-    <header>
-        <nav class="menu">
-            <div id="logo" class="logo">
-                <a class="logo" href="index.html">
-                    <img id="logo-picture" src="img/logo.png" alt="white logo of planet with ring">
-                </a>
+  <header>
+    <nav class="menu">
+        <div id="logo" class="logo">
+            <a class="logo" href="#">
+                <img id="logo-picture" src="img/logo.png" alt="white logo of planet with ring">
+            </a>
+        </div>
+        <div id="empty-space"></div>
+        <div id="cart">
+            <a id="cart-text" href="cart.html">Cart</a>
+        </div> 
+        <div id=chat> 
+            <a href="contacts.html">
+                <img id="chat-icon" src="img/chat-icon.png" alt="chat icon">
+            </a>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidenavItems">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
             </div>
-            <div id="empty-space"></div>
-            <div id="cart">
-                <a id="cart-text" href="cart.html">Cart</a>
-            </div> 
-            <div id=chat> 
-                <a href="contacts.html">
-                    <img id="chat-icon" src="img/chat-icon.png" alt="chat icon">
-                </a>
-            </div>
-            <div id="hamburger-menu">
-                <button class="cta-btn" id="open">
-                    <div class="hamburger"></div>
-                    <div class="hamburger"></div>
-                    <div class="hamburger"></div>
+        </div>
+          
+          <!-- Use any element to open the sidenav -->
+        <span id="hamburger" onclick="openNav()">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </span>
+          
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page
+          <div id="main">
+            ...
+          </div> -->
+            
+        <!-- </div> -->
+        <!-- <div class="modal-container" id="modal">
+            <div class="modal">
+                <button class="close-btn" id="close">
+                        <i class="fa fa-times"></i>
                 </button>
-            </div>
-            <div class="modal-container" id="modal">
-                <div class="modal">
-                    <button class="close-btn" id="close">
-                            <i class="fa fa-times"></i>
-                    </button>
-                    <div class="modal-content">
-                        <div>
-                            <a href="index.html">Home</a>
-                        </div>
-                        <div>
-                            <a href="products.html">Our products</a>
-                        </div>
-                        <div>
-                            <a href="#.html">About Us</a>
-                        </div>
-                        <div>
-                            <a href="#.html">Locations</a>
-                        </div>
-                        <div>
-                            <a href="contacts.html">Contacts</a>
+                <div class="modal-content">
+                    <div>
+                        <a href="products.html">Our products</a>
                     </div>
-                  </div>
+                    <div>
+                        <a href="#.html">About Us</a>
+                    </div>
+                    <div>
+                        <a href="#.html">Locations</a>
+                    </div>
+                    <div>
+                        <a href="contacts.html">Contacts</a>
                 </div>
+              </div>
             </div>
-        </nav>
-    </header>
+        </div> -->
+    </nav>
+</header>
     <main>
             <div class="modal-header">
               <h5 class="modal-title" id="cartLabel">Your cart</h5>

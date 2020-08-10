@@ -1,6 +1,6 @@
-const close = document.getElementById('close');
-const open = document.getElementById('open');
-const modal = document.getElementById('modal');
+// const close = document.getElementById('close');
+// const open = document.getElementById('open');
+// const modal = document.getElementById('modal');
 
 // const days = document.getElementById("days");
 // const hours = document.getElementById("hours");
@@ -40,32 +40,44 @@ const modal = document.getElementById('modal');
 // run every second
 // setInterval(updateCountdown, 1000);
 
-function closeNavbar(e) {
-    if (
-      document.body.classList.contains('show-nav') &&
-      e.target !== toggle &&
-      !toggle.contains(e.target) &&
-      e.target !== navbar &&
-      !navbar.contains(e.target)
-    ) {
-      document.body.classList.toggle('show-nav');
-      document.body.removeEventListener('click', closeNavbar);
-    } else if (!document.body.classList.contains('show-nav')) {
-      document.body.removeEventListener('click', closeNavbar);
-    }
-  }
+// function closeNavbar(e) {
+//     if (
+//       document.body.classList.contains('show-nav') &&
+//       e.target !== toggle &&
+//       !toggle.contains(e.target) &&
+//       e.target !== navbar &&
+//       !navbar.contains(e.target)
+//     ) {
+//       document.body.classList.toggle('show-nav');
+//       document.body.removeEventListener('click', closeNavbar);
+//     } else if (!document.body.classList.contains('show-nav')) {
+//       document.body.removeEventListener('click', closeNavbar);
+//     }
+//   }
 
-// Show modal
-function openModal(){
-  modal.classList.add('show-modal');
+// // Show modal
+// function openModal(){
+//   modal.classList.add('show-modal');
+//   document.body.style.overflow = "hidden";
+// }
+// open.addEventListener('click', openModal);
+// // => modal.classList.add('show-modal'));
+
+// // Hide modal
+// function hideModal(){
+//   modal.classList.remove('show-modal');
+//   document.body.style.overflow = "auto"
+// }
+// close.addEventListener('click', hideModal);
+
+/* Open the sidenav */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
   document.body.style.overflow = "hidden";
 }
-open.addEventListener('click', openModal);
-// => modal.classList.add('show-modal'));
 
-// Hide modal
-function hideModal(){
-  modal.classList.remove('show-modal');
-  document.body.style.overflow = "auto"
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.overflow = "visible";
 }
-close.addEventListener('click', hideModal);
