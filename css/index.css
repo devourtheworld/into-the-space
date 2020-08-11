@@ -188,6 +188,28 @@ h1, h2, p, div{
     transition: all 0.7s;
 } */
 
+.nav-link{
+    color: var(--second-color);
+}
+
+.bg-light{
+    background-color: var(--main-color) !important; 
+}
+
+#cart a{
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    padding: 1px 3px 1px 3px;
+}
+
+#cart a:hover{
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    transition: 0.3s;
+}
+
 #cart-text{
     color: var(--second-color);
     transition: all 0.5s;
@@ -195,6 +217,14 @@ h1, h2, p, div{
     margin: 3px 4px 0 4px;
     padding: 3px 4px 3px 4px;
     border: 1px solid transparent;
+}
+
+.modal-header {
+    color: var(--main-color);
+}
+
+.form-group label{
+    color: var(--main-color);
 }
 
 #cart-text:hover{
