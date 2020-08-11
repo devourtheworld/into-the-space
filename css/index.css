@@ -78,12 +78,6 @@ body{
     padding: 20px;
     z-index: 999;
   }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
 
   #hamburger{
       display: grid;
@@ -228,7 +222,7 @@ button:focus {
   font-size: 24px;
 }
 
-.modal-container {
+/* .modal-container {
     background-color: var(--third-color);
     display: none;
     position: fixed;
@@ -246,7 +240,6 @@ button:focus {
   display: grid;
   background-color: var(--main-color);
   position: absolute;
-  /* overflow: hidden; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -257,7 +250,6 @@ button:focus {
   animation-duration: 0.3s;
   justify-content: center;
   align-content: center;
-  /* text-align: center; */
 }
 
 .modal div{
@@ -283,7 +275,7 @@ div.modal-content a:hover{
     color: rgb(182, 0, 0);
     transition: 0.5s;
     border: 1px solid transparent;
-}
+} */
 
 div.hamburger{
     width: 15px;
@@ -300,7 +292,7 @@ div.hamburger{
   right: 0;
 }
 
-@keyframes modalopen {
+/* @keyframes modalopen {
   from {
     opacity: 0;
   }
@@ -308,7 +300,7 @@ div.hamburger{
   to {
     opacity: 1;
   }
-}
+} */
 /* /NAVBAR */
 
 /*#text-logo{
@@ -709,10 +701,10 @@ body #mars-text{
     transition: 0.5s;
 }
 
-.modal-container{
+/* .modal-container{
     position: absolute;
     z-index: 999;
-}
+} */
 
 #event-section-title{
     text-align: left;
@@ -1357,3 +1349,10 @@ footer{
         font-size: 9px;
     }
 }
+
+ 
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

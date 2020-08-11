@@ -47,8 +47,8 @@ class ProductList {
         );
     }
     async handleProductInfoClick(event) {
-      // const button = event.target; // Button that triggered the modal
-      // const id = button.dataset.id; // Extract info from data-* attributes
+      const button = event.target; // Button that triggered the modal
+      const id = button.dataset.id; // Extract info from data-* attributes
       const product = await this.productService.getProductById(id);
       const modal = document.querySelector('#productInfoModal');
       const productImg = modal.querySelector('.modal-body .card-img-top');

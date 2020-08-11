@@ -1,11 +1,11 @@
 class Cart {
-  // constructor() {
-  //   this.cartContainer = document.querySelector('#modal-cart');
-  //   this.cart = JSON.parse(localStorage['cart'] || '{}');
-  //   this.addEventListeners();
-  //   // this.updateBadge();
-  //   this.productService = new ProductsService();
-  // }
+  constructor() {
+    this.cartContainer = document.querySelector('#modal-cart');
+    this.cart = JSON.parse(localStorage['cart'] || '{}');
+    this.addEventListeners();
+    // this.updateBadge();
+    this.productService = new ProductsService();
+  }
   addEventListeners() {
     document
       .querySelector('.openCartLink')
