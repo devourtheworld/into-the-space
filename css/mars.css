@@ -23,6 +23,23 @@ body{
     font-family: "Roboto Condensed", sans-serif;
 }
 
+.alert {
+    position: fixed;
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    background-color: var(--third-color);
+    z-index: 1051;
+    border: 0;
+    border-radius: 0;
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
