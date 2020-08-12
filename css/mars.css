@@ -227,7 +227,46 @@ button:focus {
   font-size: 24px;
 }
 
-.modal-container {
+.nav-link{
+    color: var(--second-color);
+}
+
+.bg-light{
+    background-color: var(--main-color) !important; 
+}
+
+#cart a{
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    padding: 1px 3px 1px 3px;
+}
+
+#cart a:hover{
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    transition: 0.3s;
+}
+
+#cart-text{
+    color: var(--second-color);
+    transition: all 0.5s;
+    text-transform: uppercase;
+    margin: 3px 4px 0 4px;
+    padding: 3px 4px 3px 4px;
+    border: 1px solid transparent;
+}
+
+.modal-header {
+    color: var(--main-color);
+}
+
+.form-group label{
+    color: var(--main-color);
+}
+
+/* .modal-container {
     background-color: var(--third-color);
     display: none;
     position: fixed;
@@ -246,7 +285,6 @@ button:focus {
   display: grid;
   background-color: var(--main-color);
   position: absolute;
-  /* overflow: hidden; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -257,7 +295,6 @@ button:focus {
   animation-duration: 0.3s;
   justify-content: center;
   align-content: center;
-  /* text-align: center; */
 }
 
 .modal div{
@@ -283,7 +320,7 @@ div.modal-content a:hover{
     color: rgb(182, 0, 0);
     transition: 0.5s;
     border: 1px solid transparent;
-}
+} */
 
 div.hamburger{
     width: 15px;
@@ -406,7 +443,7 @@ footer{
     transition: 0.3s;
 }
 
-form{
+.form{
     display: grid;
     margin: 15px 0 15px 0;
     grid-template-columns: repeat(5, 1fr);
@@ -416,7 +453,7 @@ form{
     "la la la e2 bt";
 }
 
-form button{
+.form button{
     grid-area: bt;
 }
 
